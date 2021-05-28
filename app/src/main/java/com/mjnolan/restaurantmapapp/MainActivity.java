@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         sqlDB = openOrCreateDatabase("LocationsDB",MODE_PRIVATE,null);
         sqlDB.execSQL("CREATE TABLE IF NOT EXISTS locations(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR, lat REAL, lon REAL);");
+        //sqlDB.execSQL("DELETE FROM locations;");
     }
 
      public void buttonClick(View v) {
